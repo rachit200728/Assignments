@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our Tech Club to explore coding, web development, AI and technology events.">
+    <meta name="keywords" content="Tech Club, coding, web development, Java, AI, student events">
+    <meta name="author" content="Rachit Trivedi">
+
+    <title>Our Tech Club - Events & Registration</title>
+
+    <link rel="icon" type="image/png" href="favicon.jpg">
+
+    
+<style>
+    body {
+        background-color: #f4f7fb;
+        color: #243047;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    header {
+        background-color: #173b67;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    nav {
+        background-color: #24558a;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 12px;
+    }
+
+    h2 {
+        color: #173b67;
+    }
+
+    section, article, aside {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ccd5e0;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #24558a;
+        color: white;
+    }
+
+    input, select, textarea {
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    button {
+        background-color: #173b67;
+        color: white;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    footer {
+        background-color: #173b67;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+</style>
+
+
+</head>
+
+</head>
+<body>
+
+    <header>
+        <h1>Our Tech Club</h1>
+        <p>Explore Technology. Build Innovation.</p>
+    </header>
+
+    
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="register.html">Register</a> |
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+    <section id="events">
+    <h2>Upcoming Tech Club Events</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Venue</th>
+                <th>Fee</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Web Development Workshop</td>
+                <td>10 November 2026</td>
+                <td>Computer Lab 1</td>
+                <td>Free</td>
+            </tr>
+
+            <tr>
+                <td>Java Coding Competition</td>
+                <td>15 November 2026</td>
+                <td>Seminar Hall</td>
+                <td>₹50</td>
+            </tr>
+
+            <tr>
+                <td>AI & ML Seminar</td>
+                <td>20 November 2026</td>
+                <td>Auditorium</td>
+                <td>Free</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Events: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+    <main>
+        <h2>Student Registration</h2>
+
+        <form>
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Create a password" required>
+            </div>
+
+            <br>
+
+            <br>
+
+<div>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+</div>
+
+<br>
+
+<div>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"
+           placeholder="Enter your phone number"
+           pattern="[0-9]{10}" required>
+</div>
+
+<br>
+
+<fieldset>
+    <legend>Gender:</legend>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>Areas of Interest:</legend>
+
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+
+    <input type="checkbox" id="web" name="interests" value="web-development">
+    <label for="web">Web Development</label>
+
+    <input type="checkbox" id="ai" name="interests" value="ai">
+    <label for="ai">Artificial Intelligence</label>
+</fieldset>
+
+<br>
+
+<div>
+    <label for="course">Select Your Course:</label>
+
+    <select id="course" name="course" required>
+        <option value="">-- Select a Course --</option>
+        <option value="web-development">Web Development</option>
+        <option value="java">Java Programming</option>
+        <option value="python">Python Programming</option>
+        <option value="ai-ml">AI & Machine Learning</option>
+    </select>
+</div>
+
+<br>
+
+<div>
+    <label for="message">Why do you want to join our Tech Club?</label>
+    <br>
+    <textarea id="message" name="message" rows="4" cols="40"
+              placeholder="Write your message here..."></textarea>
+</div>
+
+<br>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Our Tech Club</p>
+    </footer>
+
+</body>
+</html>
