@@ -63,9 +63,47 @@
         p {
             line-height: 1.5;
         }
+
+        
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1e293b;
+    color: white;
+    padding: 12px 20px;
+    margin: -30px -30px 25px;
+}
+
+.top-bar h2 {
+    margin: 0;
+}
+
+.add-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 200;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
     </style>
 </head>
 <body>
+
+    
+<header class="top-bar">
+    <h2>My Profile</h2>
+</header>
+
 
     <h1>My Profile Cards</h1>
 
@@ -100,6 +138,8 @@
 </p>
 
     </div>
+
+<button class="add-button" aria-label="Add profile">+</button>
 
 </body>
 </html>
