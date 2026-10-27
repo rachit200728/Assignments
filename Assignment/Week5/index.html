@@ -156,6 +156,61 @@ button {
 }
 
 
+/* Reusable design variables */
+:root {
+    --primary-color: #173b67;
+    --secondary-color: #24558a;
+    --background-color: #f4f7fb;
+    --card-color: #ffffff;
+    --text-color: #243047;
+    --accent-color: #dcecff;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+
+    --border-radius: 10px;
+}
+
+/* Use variables throughout the page */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+}
+
+nav,
+th {
+    background-color: var(--secondary-color);
+}
+
+section,
+article,
+aside {
+    background-color: var(--card-color);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+}
+
+#hero {
+    background-color: var(--accent-color);
+    padding: var(--spacing-large);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+
 </style>
 
 
