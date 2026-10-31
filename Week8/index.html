@@ -73,6 +73,37 @@
     padding: 15px;
     text-align: center;
 }
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dashboard-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+.card-icon {
+    font-size: 30px;
+}
+
+.card-text h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.card-text p {
+    margin: 0;
+    color: #64748b;
+}
     </style>
 </head>
 
@@ -93,7 +124,43 @@
 
     <main class="main">
         <h2>Main Content</h2>
-        <p>Welcome to your CSS Grid dashboard!</p>
+<p>Welcome to your CSS Grid dashboard!</p>
+
+<div class="dashboard-cards">
+
+    <div class="dashboard-card">
+        <span class="card-icon">📊</span>
+        <div class="card-text">
+            <h3>Analytics</h3>
+            <p>View your reports</p>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <span class="card-icon">👥</span>
+        <div class="card-text">
+            <h3>Users</h3>
+            <p>Manage your users</p>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <span class="card-icon">📁</span>
+        <div class="card-text">
+            <h3>Projects</h3>
+            <p>Track your projects</p>
+        </div>
+    </div>
+
+    <div class="dashboard-card">
+        <span class="card-icon">⚙️</span>
+        <div class="card-text">
+            <h3>Settings</h3>
+            <p>Manage preferences</p>
+        </div>
+    </div>
+
+</div>
     </main>
 
     <footer class="foot">
