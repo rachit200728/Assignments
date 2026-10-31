@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 - Responsive Landing Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+        }
+
+        /* Mobile First Layout */
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: #1e293b;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #dbeafe;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            padding: 25px;
+            background-color: white;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* Tablet Layout */
+
+        @media (min-width: 768px) {
+            .navbar {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Desktop Layout */
+
+        @media (min-width: 1024px) {
+            .hero {
+                padding: 80px 40px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .features {
+                grid-template-columns: repeat(3, 1fr);
+                max-width: 1200px;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>ResponsiveSite</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>A simple landing page for every screen size.</p>
+    </section>
+
+    <section class="features" id="features">
+
+        <div class="card">
+            <h2>Responsive</h2>
+            <p>Works on mobile, tablet and desktop.</p>
+        </div>
+
+        <div class="card">
+            <h2>Modern Design</h2>
+            <p>Clean and simple user interface.</p>
+        </div>
+
+        <div class="card">
+            <h2>Easy to Use</h2>
+            <p>Simple layout with flexible sections.</p>
+        </div>
+
+    </section>
+
+    <section id="about" class="card">
+        <h2>About Us</h2>
+        <p>Learning responsive web design with HTML and CSS.</p>
+    </section>
+
+</body>
+</html>
